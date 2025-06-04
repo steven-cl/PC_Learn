@@ -1,6 +1,6 @@
 # PC_LEARN Frontend
 
-Este es un proyecto construido con [Vite](https://vitejs.dev/) + [React](https://react.dev/), utilizando [Tailwind CSS](https://tailwindcss.com/), [pnpm](https://pnpm.io/) <!-- y la librería de componentes [shadcn/ui](https://ui.shadcn.dev/). -->
+Este es un proyecto construido con [Vite](https://vitejs.dev/) + [React](https://react.dev/), utilizando [Tailwind CSS](https://tailwindcss.com/) y [pnpm](https://pnpm.io/) <!-- y la librería de componentes [shadcn/ui](https://ui.shadcn.dev/). -->
 
 ## 🧑‍💻 Requisitos previos
 
@@ -53,7 +53,7 @@ Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
 
 ```
 PC_Learn/
-├── public/              → Archivos publicos(archivos html, imagenes, videos, etc.)
+├── public/              → Archivos publicos(archivos html que forman parte de la app)
 ├── src/
 │   ├── assets/          → Imágenes, íconos, fuentes, etc.(internos de la app)
 │   ├── components/      → Componentes reutilizables (botones, inputs, etc.)
