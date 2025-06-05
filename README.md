@@ -53,14 +53,14 @@ Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
 
 ```
 PC_Learn/
-├── public/              → Archivos publicos(archivos html que forman parte de la app)
+├── public/              → Imágenes, íconos, fuentes, etc.(publicos)
 ├── src/
 │   ├── assets/          → Imágenes, íconos, fuentes, etc.(internos de la app)
 │   ├── components/      → Componentes reutilizables (botones, inputs, etc.)
 │   ├── layouts/         → Plantillas/layouts principales (Dashboard, AuthLayout, etc.)
 │   ├── lib/             → Funciones js auxiliares, lógica compartida (helpers, validadores, etc.)
-│   ├── App.jsx          → Componente raíz
-│   ├── index.css
+│   ├── pages/           → Paginas dentro de la app hechas en react
+│   ├── index.css        
 │   └── main.jsx         → Punto de entrada (crea el root de React)
 ├── index.html           → index del proyecto
 ├── tailwind.config.js
