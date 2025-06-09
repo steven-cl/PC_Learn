@@ -1,7 +1,6 @@
 import * as FA from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import colors from '@/styles';
-import ProductFeatures from '@layouts/ProductFeatures';
 
 export default function Home() {
     return (
