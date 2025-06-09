@@ -1,6 +1,6 @@
 import HeaderNavigation from '@layouts/HeaderNavigation'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import '@src/App.css'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import '@/App.css'
 import Home from '@pages/Home'
 import About from '@pages/About'
 

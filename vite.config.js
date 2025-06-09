@@ -1,14 +1,15 @@
 import { defineConfig } from 'vite'
+import tailwindcss from "@tailwindcss/vite"
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       '@root': path.resolve(__dirname, '.'), // Aquí apuntas a la raíz del proyecto
-      '@src': path.resolve(__dirname, 'src'), // Aquí apuntas a la carpeta src
+      '@': path.resolve(__dirname, 'src'), // Aquí apuntas a la carpeta src
       '@assets': path.resolve(__dirname, 'src/assets'), // Aquí apuntas a la carpeta assets dentro de src
       '@components': path.resolve(__dirname, 'src/components'), // Aquí apuntas a la carpeta components dentro de src
       '@layouts': path.resolve(__dirname, 'src/layouts'), // Aquí apuntas a la carpeta layouts dentro de src

@@ -1,10 +1,14 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
+import js from '@eslint/js';
+import globals from 'globals';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
 
 export default [
-  { ignores: ['dist'] },
+  js.configs.recommended,
+
+  { ignores: ['dist/', 'node_modules/'] },
+
+  // Archivos React/browser
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
@@ -30,4 +34,17 @@ export default [
       ],
     },
   },
-]
+
+  // Archivos de configuración ESM como vite.config.js y tailwind.config.js
+  {
+    files: ['vite.config.js', 'tailwind.config.js'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module', // <- ESM compatible con import/export
+      globals: {
+        __dirname: 'readonly',
+        process: 'readonly',
+      },
+    },
+  },
+];
