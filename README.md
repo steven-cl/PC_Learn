@@ -1,6 +1,6 @@
 # PC_LEARN Frontend
 
-Este es un proyecto construido con [Vite](https://vitejs.dev/) + [React](https://react.dev/), utilizando [Tailwind CSS](https://tailwindcss.com/) y [pnpm](https://pnpm.io/) <!-- y la librería de componentes [shadcn/ui](https://ui.shadcn.dev/). -->
+Este es un proyecto construido con [Vite](https://vitejs.dev/) + [React](https://react.dev/), utilizando [Tailwind CSS](https://tailwindcss.com/) y [pnpm](https://pnpm.io/)
 
 ## 🧑‍💻 Requisitos previos
 
