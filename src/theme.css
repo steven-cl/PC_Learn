@@ -120,6 +120,7 @@ text-rendering: optimizeLegibility;
 
 @theme base{
 
+--color-mierda: brown;
 --color-error: #E0245E;
 --color-warning: #FFAD1F;
 --color-success: #19CF86;
