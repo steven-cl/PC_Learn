@@ -8,7 +8,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="app app-container bg-background justify-center">
+      <div className="app app-container justify-center">
         <HeaderNavigation />
         <Routes>
           <Route path="/" element={<Home />} />
