@@ -146,9 +146,7 @@ export default function Home() {
                 { label: 'Timers', icon: FA.faClock },
                 { label: 'Ensamblador', icon: FA.faFileCode },
               ]}
-              onTutorialClick={() => console.log('Ver tutorial')}
-              onDownloadClick={() => console.log('Descargar')}
-              onShareClick={() => console.log('Compartir')}
+              ButtonLink='/'
             />
 
 
