@@ -1,5 +1,5 @@
 /** *Description: Header navigation component for a React application using Tailwind CSS and Headless UI.
-    *This component includes a responsive navigation bar with dropdown menus for products 
+    *This component includes a responsive navigation bar with dropdown menus for subMenuListItems 
     *and calls to action, as well as links to home and about pages. 
 */
 'use client'
@@ -21,24 +21,20 @@ import {
 } from '@headlessui/react'
 
 import {
-    ArrowPathIcon,
+    BookOpenIcon,
+    CpuChipIcon,
+    CodeBracketIcon,
     Bars3Icon,
-    ChartPieIcon,
-    CursorArrowRaysIcon,
-    FingerPrintIcon,
-    SquaresPlusIcon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
 
 import { ChevronDownIcon} from '@heroicons/react/20/solid'
 
-//Constants for products and calls to action
-const products = [
-    { name: 'Analytics', description: 'Get a better understanding of your traffic', to: '/about', icon: ChartPieIcon },
-    { name: 'Engagement', description: 'Speak directly to your customers', to: '#', icon: CursorArrowRaysIcon },
-    { name: 'Security', description: 'Your customers’ data will be safe and secure', to: '#', icon: FingerPrintIcon },
-    { name: 'Integrations', description: 'Connect with third-party tools', to: '#', icon: SquaresPlusIcon },
-    { name: 'Automations', description: 'Build strategic funnels that will convert', to: '#', icon: ArrowPathIcon },
+//Constants for subMenuListItems and calls to action
+const subMenuListItems = [
+    { name: 'Conceptos básicos', description: 'Aprenderas conceptos basicos y algo de historia', to: '/arduinoBasics', icon: BookOpenIcon },
+    { name: 'Hardware', description: 'Aprenderas como funciona un arduino y circuitos en el', to: '/arduinoHardware', icon: CpuChipIcon },
+    { name: 'Codificando', description: 'Aprenderas a codificar proyectos en arduino', to: '/arduinoCoding', icon: CodeBracketIcon }
 ]
 
 const primaryColor = "#000000"
@@ -73,19 +69,29 @@ const HeaderNavigation: React.FC = () => {
                         <Bars3Icon aria-hidden="true" className="size-6" color="white" />
                     </button>
                 </div>
-                <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+                <PopoverGroup className="hidden lg:flex lg:gap-x-9 items-center flex-nowrap">
+                    <Link to="/" className="text-sm/6 font-semibold navBar whitespace-nowrap">
+                        Inicio
+                    </Link>
+                    <Link to="/pcComponents" className="text-sm/6 font-semibold navBar whitespace-nowrap">
+                        Hardware de Computadoras
+                    </Link>
+                    <Link to="/basicsArchitecture" className="text-sm/6 font-semibold navBar whitespace-nowrap">
+                        Arquitectura Basica
+                    </Link>
+                    {/**Popover */}
                     <Popover className="relative">
                         <PopoverButton className="flex items-center gap-x-2 text-sm/6 font-semibold navBar bg-white">
-                            Product
+                            Arduino
                             <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-black" />
                         </PopoverButton>
 
                         <PopoverPanel
                             transition
-                            className="absolute top-full -left-8 z-50 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+                            className="mr-20 absolute top-full -left-80 z-50 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
                         >
                             <div className="p-4">
-                                {products.map((item) => (
+                                {subMenuListItems.map((item) => (
                                     <div
                                         key={item.name}
                                         className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
@@ -94,7 +100,8 @@ const HeaderNavigation: React.FC = () => {
                                             <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
                                         </div>
                                         <div className="flex-auto">
-                                            <Link to={item.to} className="block font-semibold text-gray-900">
+                                            <Link to={item.to} className="block font-semibold text-gray-900"
+                                            onClick={() => setOpen(false)}>
                                                 {item.name}
                                                 <span className="absolute inset-0" />
                                             </Link>
@@ -105,24 +112,18 @@ const HeaderNavigation: React.FC = () => {
                             </div>
                         </PopoverPanel>
                     </Popover>
-
-                    <Link to="#" className="text-sm/6 font-semibold navBar ">
-                        Features
-                    </Link>
-                    <Link to="#" className="text-sm/6 font-semibold navBar">
-                        Marketplace
-                    </Link>
-                    <Link to="#" className="text-sm/6 font-semibold navBar">
-                        Company
+                    <Link to="recommendPC" className="text-sm/6 font-semibold navBar pr-5 whitespace-nowrap">
+                        Busco computadora
                     </Link>
                 </PopoverGroup>
 
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-50" />
-                <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <DialogPanel className="fixed inset-y-0 right-0 z-50 w-80 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
-                        <Link to="/" className="-m-1.5 p-1.5">
+                        <Link to="/" className="-m-1.5 p-1.5"
+                        onClick={() => setMobileMenuOpen(false)}>
                             <span className="sr-only">Your Company</span>
                             <img
                                 alt=""
@@ -143,41 +144,52 @@ const HeaderNavigation: React.FC = () => {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
+                                <Link
+                                    to="/"
+                                    className="-mx-3 block navBar rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Inicio
+                                </Link>
+                                <Link
+                                    to="/pcComponents"
+                                    className="-mx-3 block navBar rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Hardware de computadoras
+                                </Link>
+                                <Link
+                                    to="/basicsArchitecture"
+                                    className="-mx-3 block navBar rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Arquitectura Basica
+                                </Link>
+                                <Link
+                                    to="/recommendPc"
+                                    className="-mx-3 block navBar rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Busco Computadora
+                                </Link>
                                 <Disclosure as="div" className="-mx-3">
                                     <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold navBar bg-white">
-                                        Product
+                                        Arduino
                                         <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
                                     </DisclosureButton>
                                     <DisclosurePanel className="mt-2 space-y-2">
-                                        {products.map((item) => (
+                                        {subMenuListItems.map((item) => (
                                             <Link
                                                 key={item.name}
                                                 to={item.to}
                                                 className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50 no-underline"
+                                                onClick={() => setMobileMenuOpen(false)}
                                             >
                                                 {item.name}
                                             </Link>
                                         ))}
                                     </DisclosurePanel>
                                 </Disclosure>
-                                <Link
-                                    to="/"
-                                    className="-mx-3 block navBar rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                                >
-                                    Features
-                                </Link>
-                                <Link
-                                    to="#"
-                                    className="-mx-3 block navBar rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                                >
-                                    Marketplace
-                                </Link>
-                                <Link
-                                    to="#"
-                                    className="-mx-3 block navBar rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                                >
-                                    Company
-                                </Link>
                             </div>
                         </div>
                     </div>
@@ -188,4 +200,3 @@ const HeaderNavigation: React.FC = () => {
 }
 
 export default HeaderNavigation
-
