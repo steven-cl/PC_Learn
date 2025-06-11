@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import * as FA from '@fortawesome/free-solid-svg-icons';
-import colors from '@/styles'; 
+import { Link } from 'react-router-dom'
 
 interface Tag {
     label: string;
@@ -14,9 +14,7 @@ interface FeaturedCardProps {
     description: string;
     tags: Tag[];
     badgeText?: string;
-    onTutorialClick?: () => void;
-    onDownloadClick?: () => void;
-    onShareClick?: () => void;
+    ButtonLink?: string;
 }
 
 export default function FeaturedCard({
@@ -25,9 +23,7 @@ export default function FeaturedCard({
     description,
     tags,
     badgeText = 'Destacado',
-    onTutorialClick,
-    onDownloadClick,
-    onShareClick,
+    ButtonLink
 }: FeaturedCardProps) {
     return (
         <div className="bg-white h-140 rounded-2xl shadow-lg overflow-hidden">
@@ -59,21 +55,14 @@ export default function FeaturedCard({
                 </div>
 
                 <div className="flex justify-between items-center">
-                    <button
-                        onClick={onTutorialClick}
-                        className="bg-[var(--tech-blue)] hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium flex items-center"
-                    >
-                        <FontAwesomeIcon icon={FA.faBookOpen} className="mr-2" />
-                        Ver Tutorial
-                    </button>
-                    <div className="flex space-x-3">
-                        <button onClick={onDownloadClick} className="hover:text-[var(--tech-blue)]">
-                            <FontAwesomeIcon icon={FA.faDownload} color={colors.neutralGray} />
+                    <Link to={ButtonLink}>
+                        <button
+                            className="bg-[var(--tech-blue)] hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium flex items-center"
+                        >
+                            <FontAwesomeIcon icon={FA.faBookOpen} className="mr-2" />
+                            Ver Tutorial
                         </button>
-                        <button onClick={onShareClick} className="hover:text-[var(--tech-blue)]">
-                            <FontAwesomeIcon icon={FA.faShareAlt} color={colors.neutralGray} />
-                        </button>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -27,13 +27,6 @@ export default function SummaryCard({
                     </h3>
                 </div>
                 <p className="text-[var(--neutral-gray)] my-1 ml-1 mb-3">{description}</p>
-                <button
-                    onClick={onClick}
-                    className="bg-white text-[var(--tech-blue)] hover:text-blue-700 text-sm font-medium flex items-center"
-                >
-                    Ver detalles del proyecto
-                    <FontAwesomeIcon icon="chevron-right" className="ml-2 text-xs" />
-                </button>
             </div>
         </div>
     );

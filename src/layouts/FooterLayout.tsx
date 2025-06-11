@@ -1,6 +1,3 @@
-import CardBasics from '@components/ui/CardBasics';
-import * as FA from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom'
 import {
     faFacebookF,
     faTwitter,
@@ -11,7 +8,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-700 text-white pt-8 pb-4">
+        <footer className="bg-gray-700 text-white pt-4 pb-4">
+
+            {/* Company Info */}
+            <div className="mt-8 text-center px-4">
+                <h3 className="text-lg md:text-xl font-bold text-[var(--tech-blue)]">PC Learn</h3>
+                <p className="text-sm text-gray-200 mt-1">
+                    Aprende con nosotros - Los mejores en computadoras
+                </p>
+            </div>
+
             {/* Social Icons */}
             <div className="mt-10 px-6 text-center">
                 <h4 className="text-base md:text-lg font-semibold mb-3">Síguenos en redes</h4>
@@ -29,14 +35,6 @@ export default function Footer() {
                         <FontAwesomeIcon icon={faGithub} className="text-xl hover:text-black" />
                     </a>
                 </div>
-            </div>
-
-            {/* Company Info */}
-            <div className="mt-8 text-center px-4">
-                <h3 className="text-lg md:text-xl font-bold text-[var(--tech-blue)]">PC Learn</h3>
-                <p className="text-sm text-gray-200 mt-1">
-                    Aprende con nosotros - Los mejores en computadoras
-                </p>
             </div>
 
             {/* Bottom */}

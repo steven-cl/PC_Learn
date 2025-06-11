@@ -6,7 +6,7 @@ export default function BasicsArchitecture() {
     return (
         <div className="bg-gray-200">
             <section className="bg-gradient-to-r from-blue-400 to-blue-900 text-white py-12 md:py-20">
-                <div className="mx-auto h-6 text-center">
+                <div className="mx-auto px-4 text-center">
                     <h1 className="text-3xl md:text-4xl font-bold mb-4">Arquitecturas Básicas</h1>
                     <p className="text-lg md:text-xl max-w-2xl mx-auto">
                         Fundamentos esenciales de la arquitectura de computadoras
