@@ -1,0 +1,33 @@
+import HeaderNavigation from '@layouts/HeaderNavigation'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import '@/App.css'
+import Home from '@pages/Home'
+import ArduinoBasics from '@pages/ArduinoBasics'
+import ArduinoCoding from '@pages/ArduinoCoding'
+import ArduinoHardware from '@pages/ArduinoHardware'
+import BasicsArchitecture from '@pages/BasicsArchitecture'
+import PcComponents from '@pages/PcComponents'
+import RecomendPC from '@pages/RecommendPc'
+
+
+function App() {
+
+  return (
+    <BrowserRouter>
+      <div className="app app-container justify-center">
+        <HeaderNavigation />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/arduinoBasics' element={<ArduinoBasics />}/>
+          <Route path='/arduinoCoding' element={<ArduinoCoding />} />
+          <Route path='/arduinoHardware' element={<ArduinoHardware />} />
+          <Route path='/basicsArchitecture' element={<BasicsArchitecture />} />
+          <Route path='/pcComponents' element={<PcComponents />} />
+          <Route path='/recommendPc' element={<RecomendPC />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  )
+}
+
+export default App
