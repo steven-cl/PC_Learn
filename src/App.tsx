@@ -9,6 +9,7 @@ import PcComponents from '@pages/PcComponents'
 import RecomendPC from '@pages/RecommendPc'
 import Layout from '@/Layout'
 import NotFound from '@pages/NotFound'
+import ScrollToTop from '@components/ui/ScrollToTop'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app app-container justify-center">
+        <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>
             <Route path='/' element={<Home />} />
