@@ -120,6 +120,11 @@ text-rendering: optimizeLegibility;
 
 @theme base{
 
+--tech-blue: #2863eb;
+--neutral-gray: #4b5563;
+--interactive-green: #10b981;
+--project-orange: #f59e0b;
+--mi-azul:rgb(180, 215, 250);
 --color-error: #E0245E;
 --color-warning: #FFAD1F;
 --color-success: #19CF86;

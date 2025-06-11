@@ -1,5 +1,31 @@
 {
-    "files": [],
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@components/*": [
+                "src/components/*"
+            ],
+            "@layouts/*": [
+                "src/layouts/*"
+            ],
+            "@lib/*": [
+                "src/lib/*"
+            ],
+            "@pages/*": [
+                "src/pages/*"
+            ],
+            "@assets/*": [
+                "src/assets/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
     "references": [
         {
             "path": "./tsconfig.app.json"
@@ -7,21 +33,5 @@
         {
             "path": "./tsconfig.node.json"
         }
-    ],
-    "compilerOptions": {
-        "jsx": "react-jsx",
-        "baseUrl": ".",
-        "paths": {
-            "@lib/*": [
-                "src/lib/*"
-            ],
-            "@assets/*": [
-                "src/assets/*"
-            ],
-            "@/*": ["./src/*"]
-        },
-    },
-    "include": [
-        "src/**/*"
     ]
 }
