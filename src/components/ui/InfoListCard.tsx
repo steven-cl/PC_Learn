@@ -53,7 +53,7 @@ export default function InfoListCard({ Color, Icon, IconColor, Title, ListItems,
                         </button>
                     </Link>
                     <div
-                        className={`px-3 py-1 rounded-full text-sm ${Color} text-white`}
+                        className={`px-3 py-3 rounded-full text-sm ${Color} text-white`}
                     >
                         {ExtraInfo}
                     </div>
