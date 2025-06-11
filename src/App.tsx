@@ -16,7 +16,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="app app-container justify-center">
+      <div className="app app-container justify-center bg-white">
         <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>

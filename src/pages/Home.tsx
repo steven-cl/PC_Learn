@@ -22,8 +22,8 @@ export default function Home() {
               <button className="bg-green-400 hover:bg-green-600 px-6 py-3 rounded-md font-medium transition">
                 Comenzar Ahora
               </button>
-              <button className="bg-white text-blue-900 hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition">
-                Ver Proyectos
+              <button  className="bg-white text-blue-900 hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition">
+                Ver Proyectos 
               </button>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function Home() {
                 'Componentes CPU'
               ]}
               ButtonText="Ver contenido"
-              ButtonLink="/modulo/arquitectura"
+              ButtonLink="/basicsArchitecture"
               ExtraInfo="Básico"
             />
 
@@ -75,15 +75,15 @@ export default function Home() {
               Color="bg-orange-400"
               Icon={FA.faMicrochip}
               IconColor={colors.projectOrange}
-              Title="Microcontroladores PIC"
+              Title="Arduino Hardware"
               ListItems={[
-                'Arquitectura interna',
-                'Periféricos',
-                'Modos de direccionamiento',
-                'Registros clave'
+                'Modelos de Arduino',
+                'Componentes Principales',
+                'Funcionamiento a Nivel Hardware',
+                'Proyectos de Ejemplo'
               ]}
               ButtonText="Ver contenido"
-              ButtonLink="/modulo/pic-intermedio"
+              ButtonLink="/arduinoHardware"
               ExtraInfo="Intermedio"
             />
 
@@ -91,36 +91,17 @@ export default function Home() {
               Color="bg-blue-600"
               Icon={FA.faCode}
               IconColor={colors.interactiveGreen}
-              Title="Microcontroladores PIC"
+              Title="Codificando con Arduino"
               ListItems={[
-                'Arquitectura interna',
-                'Periféricos',
-                'Modos de direccionamiento',
-                'Registros clave'
+                'Como se programa Arduino',
+                'Proyecto practico',
+                'funciones reutilizables',
+                'Consejos para aprender a programar',
               ]}
               ButtonText="Ver contenido"
-              ButtonLink="/modulo/pic-avanzado"
+              ButtonLink="/arduinoCoding"
               ExtraInfo="Avanzado"
             />
-
-            <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
-              <SimpleModuleCard
-                icon={FA.faExchange}
-                iconBackgroundColor="bg-[var(--neutral-gray)]"
-                title="Comunicación y Periféricos"
-                description="Puertos paralelos, comunicación serial, temporizadores, PWM"
-                buttonText="Explorar módulo"
-              />
-
-              <SimpleModuleCard
-                icon={FA.faLightbulb}
-                iconBackgroundColor="bg-[var(--project-orange)]"
-                title="Proyectos Integradores"
-                description="Semáforo inteligente, termostato digital, terminal serial"
-                buttonText="Explorar módulo"
-              />
-
-            </div>
           </div>
         </div>
       </section>
@@ -141,14 +122,13 @@ export default function Home() {
               title="Semáforo Inteligente"
               description="Implementación de un sistema de semáforo con sensores y temporización adaptativa usando microcontroladores PIC"
               tags={[
-                { label: 'PIC16F877A', icon: FA.faMicrochip },
-                { label: 'GPIO', icon: FA.faBolt },
-                { label: 'Timers', icon: FA.faClock },
-                { label: 'Ensamblador', icon: FA.faFileCode },
+                { label: 'Arduino R3', icon: FA.faMicrochip },
+                { label: 'LED', icon: FA.faLightbulb },
+                { label: 'Buzzer', icon: FA.faClock },
+                { label: 'C/C++', icon: FA.faFileCode },
               ]}
               ButtonLink='/'
             />
-
 
             <div >
               <SummaryCard
