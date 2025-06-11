@@ -15,14 +15,14 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Domina la Arquitectura de Máquinas
             </h1>
-            <p class="text-xl mb-6 max-w-xl">
+            <p className="text-xl mb-6 max-w-xl">
               Aprende los fundamentos de la arquitectura de computadoras, microcontroladores y programación en bajo nivel con proyectos prácticos.
             </p>
-            <div class="flex flex-wrap gap-3">
-              <button class="bg-green-400 hover:bg-green-600 px-6 py-3 rounded-md font-medium transition">
+            <div className="flex flex-wrap gap-3">
+              <button className="bg-green-400 hover:bg-green-600 px-6 py-3 rounded-md font-medium transition">
                 Comenzar Ahora
               </button>
-              <button class="bg-white text-blue-900 hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition">
+              <button className="bg-white text-blue-900 hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition">
                 Ver Proyectos
               </button>
             </div>
