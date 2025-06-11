@@ -18,7 +18,7 @@ export default function BasicsArchitecture() {
                 <div className="mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div className="lg:col-span-1">
-                            <div className="bg-white rounded-xl shadow-lg overflow-hidden sticky top-6">
+                            <div className="bg-white rounded-xl shadow-lg overflow-hidden sticky top-50">
                                 <div className="bg-[var(--tech-blue)] p-4">
                                     <h3 className="text-white text-xl font-bold">Contenido del Módulo</h3>
                                 </div>
@@ -62,7 +62,7 @@ export default function BasicsArchitecture() {
                                     <div className="flex flex-col md:flex-row gap-6 mb-6">
                                         <CardBasics
                                             Icon={FA.faExchangeAlt}
-                                             
+
                                             Title='Von Neumann'
                                             ListItems={[
                                                 'Buses compartidos para datos e instrucciones',
@@ -70,9 +70,9 @@ export default function BasicsArchitecture() {
                                                 'Riesgo de cuello de botella',
                                             ]}
                                         />
-                                        <CardBasics 
+                                        <CardBasics
                                             Icon={FA.faRoad}
-                                             
+
                                             Title='Harvard'
                                             ListItems={[
                                                 'Buses separados para datos e instrucciones',
@@ -103,9 +103,9 @@ export default function BasicsArchitecture() {
                                 </div>
                                 <div className="p-6">
                                     <div className="flex flex-col md:flex-row gap-6 mb-6">
-                                        <CardBasics 
+                                        <CardBasics
                                             Icon={FA.faMemory}
-                                             
+
                                             Title='Memoria de la CPU'
                                             ListItems={[
                                                 'RAM (volátil)',
@@ -113,9 +113,9 @@ export default function BasicsArchitecture() {
                                                 'Almacena datos e instrucciones en ejecución',
                                             ]}
                                         />
-                                        <CardBasics 
+                                        <CardBasics
                                             Icon={FA.faHdd}
-                                             
+
                                             Title='Memoria Secundaria'
                                             ListItems={[
                                                 'Discos duros, SSDs (no volátil)',
@@ -214,7 +214,7 @@ export default function BasicsArchitecture() {
                                                         <th className="py-2 px-4 border-b">Instrucción 4</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody className='text-[var(--neutral-gray)] text-black'>
+                                                <tbody className='text-neutral-gray text-black'>
                                                     <tr>
                                                         <td className="py-2 px-4 border-b text-center">1</td>
                                                         <td className="py-2 px-4 border-b text-center">Fetch</td>
@@ -259,7 +259,7 @@ export default function BasicsArchitecture() {
                                         <p className="text-[var(--neutral-gray)] mb-4">
                                             La Unidad Central de Procesamiento (CPU) es el cerebro de la computadora, compuesto por varios componentes clave que trabajan en conjunto para ejecutar instrucciones.
                                         </p>
-                                        
+
                                         <div className="bg-blue-50 rounded-lg p-6 mb-6 border border-blue-200">
                                             <div className="flex flex-col items-center">
                                                 <div className="relative w-full max-w-2xl">
@@ -272,14 +272,14 @@ export default function BasicsArchitecture() {
                                                                 </div>
                                                                 <p className="text-xs font-semibold">Unidad de Control</p>
                                                             </div>
-                                                            
+
                                                             <div className="bg-red-600 rounded p-3">
                                                                 <div className="flex items-center justify-center mb-1">
                                                                     <FontAwesomeIcon icon={FA.faCalculator} size="lg" />
                                                                 </div>
                                                                 <p className="text-xs font-semibold">ALU</p>
                                                             </div>
-                                                            
+
                                                             <div className="bg-green-600 rounded p-3">
                                                                 <div className="flex items-center justify-center mb-1">
                                                                     <FontAwesomeIcon icon={FA.faMemory} size="lg" />
@@ -288,7 +288,7 @@ export default function BasicsArchitecture() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     <div className="flex justify-between px-8 mb-4">
                                                         <div className="text-center">
                                                             <FontAwesomeIcon icon={FA.faArrowDown} className="text-blue-500" />
@@ -303,7 +303,7 @@ export default function BasicsArchitecture() {
                                                             <p className="text-xs mt-1 text-[var(--neutral-gray)]">Bus de direcciones</p>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     <div className="bg-gray-700 rounded-lg p-3 text-white text-center">
                                                         <h4 className="font-bold mb-1">Memoria Principal</h4>
                                                         <p className="text-xs">RAM</p>
@@ -311,22 +311,22 @@ export default function BasicsArchitecture() {
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        <div > 
+
+                                        <div >
                                             <div className="flex flex-col md:flex-row gap-6 mb-6">
-                                                <CardBasics 
-                                                Icon={FA.faMicrochip}
-                                                 
-                                                Title='Unidad de Control (UC)'
-                                                ListItems={[
-                                                    'Coordina todas las operaciones del procesador',
-                                                    'Interpreta las instrucciones del programa',
-                                                    'Genera señales de control para otros componentes',
-                                                ]}
+                                                <CardBasics
+                                                    Icon={FA.faMicrochip}
+
+                                                    Title='Unidad de Control (UC)'
+                                                    ListItems={[
+                                                        'Coordina todas las operaciones del procesador',
+                                                        'Interpreta las instrucciones del programa',
+                                                        'Genera señales de control para otros componentes',
+                                                    ]}
                                                 />
-                                                <CardBasics 
+                                                <CardBasics
                                                     Icon={FA.faCalculator}
-                                                     
+
                                                     Title='Unidad Aritmético-Lógica (ALU)'
                                                     ListItems={[
                                                         'Realiza operaciones aritméticas (suma, resta, etc.)',
@@ -336,29 +336,29 @@ export default function BasicsArchitecture() {
                                                 />
                                             </div>
                                             <div className="flex flex-col md:flex-row gap-6 mb-6">
-                                                <CardBasics 
-                                                Icon={FA.faMemory}
-                                                 
-                                                Title='Registros'
-                                                ListItems={[
-                                                    'Pequeñas memorias de alta velocidad en la CPU',
-                                                    'Almacenan datos temporalmente durante el procesamiento',
-                                                    'Incluyen el contador de programa (PC) y registro de instrucción (IR)',
-                                                ]}
+                                                <CardBasics
+                                                    Icon={FA.faMemory}
+
+                                                    Title='Registros'
+                                                    ListItems={[
+                                                        'Pequeñas memorias de alta velocidad en la CPU',
+                                                        'Almacenan datos temporalmente durante el procesamiento',
+                                                        'Incluyen el contador de programa (PC) y registro de instrucción (IR)',
+                                                    ]}
                                                 />
-                                                <CardBasics 
-                                                Icon={FA.faBus}
-                                                Title='Buses de comunicación'
-                                                ListItems={[
-                                                    'Bus de datos: Transporta información entre componentes',
-                                                    'Bus de direcciones: Especifica ubicaciones de memoria',
-                                                    'Bus de control: Transporta señales de sincronización',
-                                                ]}
+                                                <CardBasics
+                                                    Icon={FA.faBus}
+                                                    Title='Buses de comunicación'
+                                                    ListItems={[
+                                                        'Bus de datos: Transporta información entre componentes',
+                                                        'Bus de direcciones: Especifica ubicaciones de memoria',
+                                                        'Bus de control: Transporta señales de sincronización',
+                                                    ]}
                                                 />
                                             </div>
                                         </div>
 
-                                        
+
                                         <div className="bg-gray-200 rounded-lg p-6">
                                             <h3 className="font-bold text-[var(--tech-blue)] mb-4 text-center text-xl">
                                                 <FontAwesomeIcon icon={FA.faCogs} className="mr-2" /> Flujo de ejecución en la CPU
@@ -378,7 +378,7 @@ export default function BasicsArchitecture() {
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        
+
                                                         <div className="flex items-start">
                                                             <div className="bg-[var(--tech-blue)] text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">
                                                                 2
@@ -390,7 +390,7 @@ export default function BasicsArchitecture() {
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        
+
                                                         <div className="flex items-start">
                                                             <div className="bg-[var(--tech-blue)] text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">
                                                                 3
@@ -402,7 +402,7 @@ export default function BasicsArchitecture() {
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        
+
                                                         <div className="flex items-start">
                                                             <div className="bg-[var(--tech-blue)] text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">
                                                                 4
