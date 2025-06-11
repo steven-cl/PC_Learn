@@ -30,7 +30,7 @@ export default function FeaturedCard({
     onShareClick,
 }: FeaturedCardProps) {
     return (
-        <div className="bg-white h-140 rounded-2xl shadow-lg overflow-hidden">
+        <div className="bg-white h-145 rounded-2xl shadow-lg overflow-hidden">
             <div className="relative h-64">
                 <div className="absolute inset-0 bg-gradient-to-r from-[var(--tech-blue)] to-blue-600 flex items-center justify-center">
                     <div className="relative">
