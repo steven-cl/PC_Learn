@@ -12,6 +12,7 @@ interface InfoListCardProps {
     ButtonText: string;
     ButtonLink: string;
     ExtraInfo: string;
+    className?: string;
 }
 
 /** *InfoListCard Component
@@ -21,12 +22,13 @@ interface InfoListCardProps {
     *@returns {JSX.Element} - The rendered CardTitle component
 */
 
-export default function InfoListCard({ Color, Icon, IconColor, Title, ListItems, ButtonText, ButtonLink, ExtraInfo }: InfoListCardProps) {
+export default function InfoListCard({ Color, Icon, IconColor, Title, ListItems, ButtonText, ButtonLink, ExtraInfo, className }: InfoListCardProps) {
     if (!IconColor) {
         IconColor = Color;
     }
+    className = className + ' bg-white rounded-xl shadow-lg overflow-hidden module-card'
     return (
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden module-card">
+        <div className={className}>
             <div className={`p-6 ${Color}`}
             >
                 <div className="flex items-center space-x-4">
