@@ -26,7 +26,7 @@ export default function InfoListCard({ Color, Icon, IconColor, Title, ListItems,
     if (!IconColor) {
         IconColor = Color;
     }
-    className = className + ' bg-white rounded-xl shadow-lg overflow-hidden module-card'
+    className = `${className ? className + ' ' : ''}bg-white rounded-xl shadow-lg overflow-hidden module-card`;
     return (
         <div className={className}>
             <div className={`p-6 ${Color}`}

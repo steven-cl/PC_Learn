@@ -32,7 +32,6 @@ import { ChevronDownIcon} from '@heroicons/react/20/solid'
 
 //Constants for subMenuListItems and calls to action
 const subMenuListItems = [
-    { name: 'Conceptos básicos', description: 'Aprenderas conceptos basicos y algo de historia', to: '/arduinoBasics', icon: BookOpenIcon },
     { name: 'Hardware', description: 'Aprenderas como funciona un arduino y circuitos en el', to: '/arduinoHardware', icon: CpuChipIcon },
     { name: 'Codificando', description: 'Aprenderas a codificar proyectos en arduino', to: '/arduinoCoding', icon: CodeBracketIcon }
 ]

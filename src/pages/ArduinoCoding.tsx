@@ -69,20 +69,21 @@ export default function ArduinoCoding() {
                 </div>
             </section>
 
-            <div className="flex flex-col items-center gap-6 p-6 w-full">
+            <div className="flex flex-col items-center gap-10 p-10 w-full">
 
                 {/* Summary Cards + Code Blocks */}
-                <div className="flex flex-col md:flex-row gap-4 items-stretch mb-4 py-20">
-                    <div className="md:w-1/2">
+                <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
+                    <div className="w-full max-w-3xl mx-auto">
                         <SummaryCard
                             icon={faCode}
                             title="¿Cómo se programa Arduino?"
                             description="Arduino se programa con C/C++ usando el IDE de Arduino.\n Las funciones principales son setup() y loop().\n setup() se ejecuta una vez y loop() continuamente."
+                            className="text-lg p-6"
                         />
                     </div>
-                    <div className="md:w-1/2">
-                        <Card className="module-card overflow-auto w-full text-sm sm:text-base max-w-2xl mx-auto mb-2 h-full">
-                            <CardContent className="p-4 text-start">
+                    <div className="w-full max-w-3xl mx-auto">
+                        <Card className="module-card overflow-auto w-full text-lg sm:text-xl max-w-3xl mx-auto mb-6 h-full">
+                            <CardContent className="p-6 text-start">
                                 <CodeBlock
                                     text={arduinoBasicCode}
                                     language="cpp"
@@ -94,17 +95,18 @@ export default function ArduinoCoding() {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-4 items-stretch mb-4 py-20">
-                    <div className="md:w-1/2">
+                <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
+                    <div className="w-full max-w-3xl mx-auto">
                         <SummaryCard
                             icon={faThermometerHalf}
                             title="Proyecto: Sensor de Temperatura"
                             description="Usando el sensor LM35, puedes medir temperatura ambiente y mostrarla por el monitor serial.\n Usa analogRead() y convierte el valor a grados."
+                            className="text-lg p-6"
                         />
                     </div>
-                    <div className="md:w-1/2">
-                        <Card className="module-card overflow-auto w-full text-sm sm:text-base max-w-2xl mx-auto mb-2 h-full">
-                            <CardContent className="p-4 text-start">
+                    <div className="w-full max-w-3xl mx-auto">
+                        <Card className="module-card overflow-auto w-full text-lg sm:text-xl max-w-3xl mx-auto mb-6 h-full">
+                            <CardContent className="p-6 text-start">
                                 <CodeBlock
                                     text={temperatureSensorCode}
                                     language="cpp"
@@ -116,17 +118,18 @@ export default function ArduinoCoding() {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-4 items-stretch mb-4 py-20">
-                    <div className="md:w-1/2">
+                <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
+                    <div className="w-full max-w-3xl mx-auto">
                         <SummaryCard
                             icon={faMicrochip}
                             title="Funciones personalizadas"
                             description="Puedes encapsular comportamientos repetitivos en funciones como parpadearLED(pin, tiempo)\n o leerTemperatura(pin), para reutilizar código fácilmente."
+                            className="text-lg p-6"
                         />
                     </div>
-                    <div className="md:w-1/2 flex flex-col gap-4">
-                        <Card className="module-card overflow-auto w-full text-sm sm:text-base max-w-2xl mx-auto mb-2 h-full">
-                            <CardContent className="p-4">
+                    <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
+                        <Card className="module-card overflow-auto w-full text-lg sm:text-xl max-w-3xl mx-auto mb-6 h-full">
+                            <CardContent className="p-6 text-start">
                                 <CodeBlock
                                     text={functionsCode}
                                     language="cpp"
@@ -136,46 +139,45 @@ export default function ArduinoCoding() {
                             </CardContent>
                         </Card>
                     </div>
-
                 </div>
-                <div className="flex flex-col md:flex-row gap-4 items-stretch mb-4 py-20" id='xd'>
-                        <div className="md:w-1/2">
-                            <InfoListCard
-                                Color="bg-[var(--project-orange)]"
-                                Icon={faLightbulb}
-                                IconColor={colors.projectOrange}
-                                Title="Proyectos recomendados"
-                                ListItems={[
-                                    "Control de LED con botón (entrada digital)",
-                                    "Semáforo con LEDs (temporización)",
-                                    "Medición de distancia con HC-SR04",
-                                ]}
-                                ButtonText="Ver más"
-                                ButtonLink="/proyectos"
-                                ExtraInfo="Nivel: Principiante"
-                                className="flex"
-                            />
-                        </div>
-                        <div className="md:w-1/2">
-                            <InfoListCard
-                                Color="bg-[var(--interactive-green)]"
-                                Icon={faBolt}
-                                IconColor={colors.interactiveGreen}
-                                Title="Consejos de codificación"
-                                ListItems={[
-                                    "Comienza con ejemplos básicos",
-                                    "Prueba en simuladores como Tinkercad",
-                                    "Comenta tu código para entenderlo mejor",
-                                    "Consulta la documentación oficial",
-                                    "Usa funciones para organizar tu lógica",
-                                ]}
-                                ButtonText="Guía completa"
-                                ButtonLink="/guia"
-                                ExtraInfo="Recomendado"
-                                className="flex"
-                            />
-                        </div>
+                <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full" id='xd'>
+                    <div className="w-full max-w-3xl mx-auto">
+                        <InfoListCard
+                            Color="bg-[var(--project-orange)]"
+                            Icon={faLightbulb}
+                            IconColor={colors.projectOrange}
+                            Title="Proyectos recomendados"
+                            ListItems={[
+                                "Control de LED con botón (entrada digital)",
+                                "Semáforo con LEDs (temporización)",
+                                "Medición de distancia con HC-SR04",
+                            ]}
+                            ButtonText="Ver más"
+                            ButtonLink="/proyectos"
+                            ExtraInfo="Nivel: Principiante"
+                            className="flex text-lg p-6 mx-auto"
+                        />
                     </div>
+                    <div className="w-full max-w-3xl mx-auto">
+                        <InfoListCard
+                            Color="bg-[var(--interactive-green)]"
+                            Icon={faBolt}
+                            IconColor={colors.interactiveGreen}
+                            Title="Consejos de codificación"
+                            ListItems={[
+                                "Comienza con ejemplos básicos",
+                                "Prueba en simuladores como Tinkercad",
+                                "Comenta tu código para entenderlo mejor",
+                                "Consulta la documentación oficial",
+                                "Usa funciones para organizar tu lógica",
+                            ]}
+                            ButtonText="Guía completa"
+                            ButtonLink="/guia"
+                            ExtraInfo="Recomendado"
+                            className="flex text-lg p-6 mx-auto"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );
