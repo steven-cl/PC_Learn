@@ -1,3 +1,4 @@
+import CardBasics from '@/components/ui/CardBasics';
 import * as FA from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -59,48 +60,26 @@ export default function BasicsArchitecture() {
                                 </div>
                                 <div className="p-6">
                                     <div className="flex flex-col md:flex-row gap-6 mb-6">
-                                        <div className="md:w-1/2">
-                                            <div className="bg-blue-100 rounded-lg p-4 border border-blue-200">
-                                                <h3 className="font-bold text-[var(--tech-blue)] mb-3 flex items-center">
-                                                    <FontAwesomeIcon icon={FA.faExchangeAlt} className="mr-2" /> Von Neumann
-                                                </h3>
-                                                <ul className="space-y-2 text-[var(--neutral-gray)]">
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Buses compartidos para datos e instrucciones
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Arquitectura más simple y económica
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Riesgo de cuello de botella
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="md:w-1/2">
-                                            <div className="bg-blue-100 rounded-lg p-4 border border-blue-200">
-                                                <h3 className="font-bold text-[var(--tech-blue)] mb-3 flex items-center">
-                                                    <FontAwesomeIcon icon={FA.faRoad} className="mr-2" /> Harvard
-                                                </h3>
-                                                <ul className="space-y-2 text-[var(--neutral-gray)]">
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Buses separados para datos e instrucciones
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Mayor velocidad de ejecución
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                         Mayor complejidad y costo
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <CardBasics
+                                            Icon={FA.faExchangeAlt}
+                                             
+                                            Title='Von Neumann'
+                                            ListItems={[
+                                                'Buses compartidos para datos e instrucciones',
+                                                'Arquitectura más simple y económica',
+                                                'Riesgo de cuello de botella',
+                                            ]}
+                                        />
+                                        <CardBasics 
+                                            Icon={FA.faRoad}
+                                             
+                                            Title='Harvard'
+                                            ListItems={[
+                                                'Buses separados para datos e instrucciones',
+                                                'Mayor velocidad de ejecución',
+                                                'Mayor complejidad y costo',
+                                            ]}
+                                        />
                                     </div>
                                     <div className="bg-gray-200 rounded-lg p-4 mb-6">
                                         <h4 className="font-bold text-[var(--tech-blue)] mb-3 flex items-center">
@@ -123,46 +102,27 @@ export default function BasicsArchitecture() {
                                     <h2 className="text-white text-2xl font-bold">Modelos de memoria</h2>
                                 </div>
                                 <div className="p-6">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                                        <div className="bg-blue-100 rounded-lg p-4 border border-blue-100">
-                                            <h3 className="font-bold text-[var(--tech-blue)] mb-3 flex items-center">
-                                                <FontAwesomeIcon icon={FA.faMemory} className="mr-2" /> Memoria de la CPU
-                                            </h3>
-                                            <ul className="space-y-2 text-[var(--neutral-gray)]">
-                                                <li className="flex items-start">
-                                                    <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                    RAM (volátil)
-                                                </li>
-                                                <li className="flex items-start">
-                                                    <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                    Acceso rápido pero limitada capacidad
-                                                </li>
-                                                <li className="flex items-start">
-                                                    <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                    Almacena datos e instrucciones en ejecución
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div className="bg-blue-100 rounded-lg p-4 border border-blue-100">
-                                            <h3 className="font-bold text-[var(--tech-blue)] mb-3 flex items-center">
-                                                <FontAwesomeIcon icon={FA.faHdd} className="mr-2" /> Memoria Secundaria
-                                            </h3>
-                                            <ul className="space-y-2 text-[var(--neutral-gray)]">
-                                                <li className="flex items-start">
-                                                    <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                    Discos duros, SSDs (no volátil)
-                                                </li>
-                                                <li className="flex items-start">
-                                                    <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                     Mayor capacidad pero más lenta
-                                                </li>
-                                                <li className="flex items-start">
-                                                    <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                    Almacenamiento permanente
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <div className="flex flex-col md:flex-row gap-6 mb-6">
+                                        <CardBasics 
+                                            Icon={FA.faMemory}
+                                             
+                                            Title='Memoria de la CPU'
+                                            ListItems={[
+                                                'RAM (volátil)',
+                                                'Acceso rápido pero limitada capacidad',
+                                                'Almacena datos e instrucciones en ejecución',
+                                            ]}
+                                        />
+                                        <CardBasics 
+                                            Icon={FA.faHdd}
+                                             
+                                            Title='Memoria Secundaria'
+                                            ListItems={[
+                                                'Discos duros, SSDs (no volátil)',
+                                                'Mayor capacidad pero más lenta',
+                                                'Almacenamiento permanente',
+                                            ]}
+                                        />
                                     </div>
                                     <div className="bg-gray-200 rounded-lg p-4">
                                         <h4 className="font-bold text-[var(--tech-blue)] mb-3 flex items-center">
@@ -352,87 +312,52 @@ export default function BasicsArchitecture() {
                                             </div>
                                         </div>
                                         
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                                            <div className="bg-blue-100 rounded-lg p-4 border border-blue-200">
-                                                <h3 className="font-bold text-[var(--tech-blue)] mb-3 flex items-center">
-                                                    <FontAwesomeIcon icon={FA.faMicrochip} className="mr-2" /> Unidad de Control (UC)
-                                                </h3>
-                                                <ul className="space-y-2 text-[var(--neutral-gray)]">
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Coordina todas las operaciones del procesador
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Interpreta las instrucciones del programa
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Genera señales de control para otros componentes
-                                                    </li>
-                                                </ul>
+                                        <div > 
+                                            <div className="flex flex-col md:flex-row gap-6 mb-6">
+                                                <CardBasics 
+                                                Icon={FA.faMicrochip}
+                                                 
+                                                Title='Unidad de Control (UC)'
+                                                ListItems={[
+                                                    'Coordina todas las operaciones del procesador',
+                                                    'Interpreta las instrucciones del programa',
+                                                    'Genera señales de control para otros componentes',
+                                                ]}
+                                                />
+                                                <CardBasics 
+                                                    Icon={FA.faCalculator}
+                                                     
+                                                    Title='Unidad Aritmético-Lógica (ALU)'
+                                                    ListItems={[
+                                                        'Realiza operaciones aritméticas (suma, resta, etc.)',
+                                                        'Ejecuta operaciones lógicas (AND, OR, NOT)',
+                                                        'Opera con datos binarios',
+                                                    ]}
+                                                />
                                             </div>
-                                            
-                                            <div className="bg-blue-100 rounded-lg p-4 border border-blue-200">
-                                                <h3 className="font-bold text-[var(--tech-blue)] mb-3 flex items-center">
-                                                    <FontAwesomeIcon icon={FA.faCalculator} className="mr-2" /> Unidad Aritmético-Lógica (ALU)
-                                                </h3>
-                                                <ul className="space-y-2 text-[var(--neutral-gray)]">
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Realiza operaciones aritméticas (suma, resta, etc.)
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Ejecuta operaciones lógicas (AND, OR, NOT)
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Opera con datos binarios
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            
-                                            <div className="bg-blue-100 rounded-lg p-4 border border-blue-200">
-                                                <h3 className="font-bold text-[var(--tech-blue)] mb-3 flex items-center">
-                                                    <FontAwesomeIcon icon={FA.faMemory} className="mr-2" /> Registros
-                                                </h3>
-                                                <ul className="space-y-2 text-[var(--neutral-gray)]">
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Pequeñas memorias de alta velocidad en la CPU
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Almacenan datos temporalmente durante el procesamiento
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        Incluyen el contador de programa (PC) y registro de instrucción (IR)
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            
-                                            <div className="bg-blue-100 rounded-lg p-4 border border-blue-200">
-                                                <h3 className="font-bold text-[var(--tech-blue)] mb-3 flex items-center">
-                                                    <FontAwesomeIcon icon={FA.faBus} className="mr-2" /> Buses de comunicación
-                                                </h3>
-                                                <ul className="space-y-2 text-[var(--neutral-gray)]">
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        <strong>Bus de datos:</strong> Transporta información entre componentes
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        <strong>Bus de direcciones:</strong> Especifica ubicaciones de memoria
-                                                    </li>
-                                                    <li className="flex items-start">
-                                                        <FontAwesomeIcon icon={FA.faCheckCircle} className="text-[var(--interactive-green)] mt-1 mr-2" />
-                                                        <strong>Bus de control:</strong> Transporta señales de sincronización
-                                                    </li>
-                                                </ul>
+                                            <div className="flex flex-col md:flex-row gap-6 mb-6">
+                                                <CardBasics 
+                                                Icon={FA.faMemory}
+                                                 
+                                                Title='Registros'
+                                                ListItems={[
+                                                    'Pequeñas memorias de alta velocidad en la CPU',
+                                                    'Almacenan datos temporalmente durante el procesamiento',
+                                                    'Incluyen el contador de programa (PC) y registro de instrucción (IR)',
+                                                ]}
+                                                />
+                                                <CardBasics 
+                                                Icon={FA.faBus}
+                                                Title='Buses de comunicación'
+                                                ListItems={[
+                                                    'Bus de datos: Transporta información entre componentes',
+                                                    'Bus de direcciones: Especifica ubicaciones de memoria',
+                                                    'Bus de control: Transporta señales de sincronización',
+                                                ]}
+                                                />
                                             </div>
                                         </div>
+
                                         
                                         <div className="bg-gray-200 rounded-lg p-6">
                                             <h3 className="font-bold text-[var(--tech-blue)] mb-4 text-center text-xl">
