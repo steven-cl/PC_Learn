@@ -4,6 +4,7 @@ import InfoListCard from '@/components/ui/InfoListCard';
 import SummaryCard from '@/components/ui/SummaryCard';
 import colors from '@/styles';
 import { CodeBlock, dracula } from "react-code-blocks";
+import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 
 const arduinoBasicCode = `
@@ -51,9 +52,16 @@ float leerTemperatura(int pin) {
     return (voltaje - 0.5) * 100;
 }`;
 
+const motionCard = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.5 }
+};
+
 export default function ArduinoCoding() {
     return (
         <div className="h-max bg-white justify-items-center pb-10 text-center">
+
             {/* Banner */}
             <section className="bg-gradient-to-r from-blue-400 to-blue-900 text-white py-12 md:py-20 w-full">
                 <div className="mx-auto px-4 text-center">
@@ -63,6 +71,7 @@ export default function ArduinoCoding() {
             </section>
 
             <div className="flex flex-col items-center gap-10 p-10 w-full">
+
                 {/* Summary Cards + Code Blocks */}
                 <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
                     <div className="w-full max-w-4xl mx-auto">
@@ -193,7 +202,6 @@ export default function ArduinoCoding() {
                             className="flex text-lg p-6 mx-auto"
                         />
                     </div>
-                </div>
 
                 <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
                     <div className="w-full max-w-4xl mx-auto">
