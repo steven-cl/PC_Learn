@@ -24,6 +24,7 @@ import {
     BookOpenIcon,
     CpuChipIcon,
     CodeBracketIcon,
+    LightBulbIcon,
     Bars3Icon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
@@ -36,7 +37,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const subMenuListItems = [
     { name: 'Hardware', description: 'Aprenderas como funciona un arduino y circuitos en el', to: '/arduinoHardware', icon: CpuChipIcon },
     { name: 'Codificando', description: 'Aprenderas a codificar proyectos en arduino', to: '/arduinoCoding', icon: CodeBracketIcon },
-    { name: 'Termómetro Digital', description: 'Proyecto completo de termómetro con sensor LM35', to: '/arduinoTermometro', icon: faThermometerHalf }
+    { name: 'LED Intermitente', description: 'Proyecto básico: aprende a hacer parpadear un LED', to: '/arduinoLedProject', icon: LightBulbIcon },
+    { name: 'Termómetro Digital', description: 'Proyecto completo de termómetro con sensor LM35', to: '/arduinoTermometro', icon: faThermometerHalf },
+    
 ]
 
 const primaryColor = "#000000"
