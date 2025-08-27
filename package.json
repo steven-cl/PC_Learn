@@ -28,7 +28,7 @@
     "framer-motion": "^12.16.0",
     "lucide-react": "^0.513.0",
     "motion": "^12.17.0",
-    "outline": "link:@heroicons/react/24/outline",
+
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.1.0",
     "postcss-preset-env": "^10.2.1",
@@ -36,7 +36,7 @@
     "react-code-blocks": "^0.1.6",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2",
-    "solid": "link:@heroicons/react/20/solid",
+
     "tailwind-merge": "^3.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
