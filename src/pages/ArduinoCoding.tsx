@@ -1,4 +1,5 @@
-import { faCode, faThermometerHalf, faMicrochip, faLightbulb, faBolt } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faThermometerHalf, faMicrochip, faLightbulb, faBolt, faTemperatureLow, faRobot } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import InfoListCard from '@/components/ui/InfoListCard';
 import SummaryCard from '@/components/ui/SummaryCard';
 import colors from '@/styles';
@@ -73,108 +74,135 @@ export default function ArduinoCoding() {
 
                 {/* Summary Cards + Code Blocks */}
                 <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
-                    <div className="w-full max-w-3xl mx-auto">
+                    <div className="w-full max-w-4xl mx-auto">
                         <SummaryCard
                             icon={faCode}
                             title="¿Cómo se programa Arduino?"
                             description="Arduino se programa con C/C++ usando el IDE de Arduino.\n Las funciones principales son setup() y loop().\n setup() se ejecuta una vez y loop() continuamente."
                         />
                     </div>
-                    <div className="w-full max-w-3xl mx-auto">
-                        <Card className="module-card overflow-auto w-full text-lg sm:text-xl max-w-3xl mx-auto mb-6 h-full">
-                            <CardContent className="p-6 text-start">
-                                <CodeBlock
-                                    text={arduinoBasicCode}
-                                    language="cpp"
-                                    showLineNumbers
-                                    theme={dracula}
-                                />
+                    <div className="w-full max-w-4xl mx-auto">
+                        <Card className="module-card overflow-hidden w-full shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-gradient-to-br from-gray-50 to-gray-100">
+                            <CardContent className="p-4 sm:p-6 lg:p-8">
+                                <div className="rounded-lg overflow-hidden border border-gray-200 shadow-inner">
+                                    <CodeBlock
+                                        text={arduinoBasicCode}
+                                        language="cpp"
+                                        showLineNumbers
+                                        theme={dracula}
+                                    />
+                                </div>
                             </CardContent>
                         </Card>
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
-                    <div className="w-full max-w-3xl mx-auto">
+                    <div className="w-full max-w-4xl mx-auto">
                         <SummaryCard
                             icon={faThermometerHalf}
                             title="Proyecto: Sensor de Temperatura"
                             description="Usando el sensor LM35, puedes medir temperatura ambiente y mostrarla por el monitor serial.\n Usa analogRead() y convierte el valor a grados."
                         />
                     </div>
-                    <div className="w-full max-w-3xl mx-auto">
-                        <Card className="module-card overflow-auto w-full text-lg sm:text-xl max-w-3xl mx-auto mb-6 h-full">
-                            <CardContent className="p-6 text-start">
-                                <CodeBlock
-                                    text={temperatureSensorCode}
-                                    language="cpp"
-                                    showLineNumbers
-                                    theme={dracula}
-                                />
+                    <div className="w-full max-w-4xl mx-auto">
+                        <Card className="module-card overflow-hidden w-full shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-gradient-to-br from-gray-50 to-gray-100">
+                            <CardContent className="p-4 sm:p-6 lg:p-8">
+                                <div className="rounded-lg overflow-hidden border border-gray-200 shadow-inner">
+                                    <CodeBlock
+                                        text={temperatureSensorCode}
+                                        language="cpp"
+                                        showLineNumbers
+                                        theme={dracula}
+                                    />
+                                </div>
                             </CardContent>
                         </Card>
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
-                    <div className="w-full max-w-3xl mx-auto">
+                    <div className="w-full max-w-4xl mx-auto">
                         <SummaryCard
                             icon={faMicrochip}
                             title="Funciones personalizadas"
                             description="Puedes encapsular comportamientos repetitivos en funciones como parpadearLED(pin, tiempo)\n o leerTemperatura(pin), para reutilizar código fácilmente."
                         />
                     </div>
-                    <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
-                        <Card className="module-card overflow-auto w-full text-lg sm:text-xl max-w-3xl mx-auto mb-6 h-full">
-                            <CardContent className="p-6 text-start">
-                                <CodeBlock
-                                    text={functionsCode}
-                                    language="cpp"
-                                    showLineNumbers
-                                    theme={dracula}
-                                />
+                    <div className="w-full max-w-4xl mx-auto flex flex-col gap-6">
+                        <Card className="module-card overflow-hidden w-full shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-gradient-to-br from-gray-50 to-gray-100">
+                            <CardContent className="p-4 sm:p-6 lg:p-8">
+                                <div className="rounded-lg overflow-hidden border border-gray-200 shadow-inner">
+                                    <CodeBlock
+                                        text={functionsCode}
+                                        language="cpp"
+                                        showLineNumbers
+                                        theme={dracula}
+                                    />
+                                </div>
                             </CardContent>
                         </Card>
                     </div>
                 </div>
-                <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full" id='xd'>
-                    <div className="w-full max-w-3xl mx-auto">
-                        <InfoListCard
-                            Color="bg-[var(--project-orange)]"
-                            Icon={faLightbulb}
-                            IconColor={colors.projectOrange}
-                            Title="Proyectos recomendados"
-                            ListItems={[
-                                "Control de LED con botón (entrada digital)",
-                                "Semáforo con LEDs (temporización)",
-                                "Medición de distancia con HC-SR04",
-                            ]}
-                            ButtonText="Ver más"
-                            ButtonLink="/proyectos"
-                            ExtraInfo="Nivel: Principiante"
-                            className="flex text-lg p-6 mx-auto"
-                        />
+                {/* Proyectos de Ejemplo */}
+                <section className="py-12 bg-gray-100 w-full">
+                    <div className="mx-auto px-4 max-w-6xl">
+                        <h2 className="text-2xl font-bold text-center mb-8 text-blue-600">
+                            <FontAwesomeIcon icon={faLightbulb} className="mr-2" />
+                            Proyectos de Ejemplo
+                        </h2>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <InfoListCard
+                                Color="bg-orange-500"
+                                IconColor={colors.projectOrange}
+                                Icon={faLightbulb}
+                                Title="LED Intermitente"
+                                ListItems={[
+                                    'Componentes: LED, resistencia',
+                                    'Conceptos: Salida digital, timing',
+                                    'Dificultad: Básico',
+                                    'Tiempo estimado: 15 min'
+                                ]}
+                                ButtonText="Ver proyecto"
+                                ButtonLink="https://arduino.microlog.es/luz-intermitente/"
+                                ExtraInfo="Básico"
+                            />
+
+                            <InfoListCard
+                                Color="bg-green-600"
+                                IconColor={colors.interactiveGreen}
+                                Icon={faTemperatureLow}
+                                Title="Termómetro Digital"
+                                ListItems={[
+                                    'Componentes: Sensor LM35, display',
+                                    'Conceptos: Entrada analógica, ADC',
+                                    'Dificultad: Intermedio',
+                                    'Tiempo estimado: 45 min'
+                                ]}
+                                ButtonText="Ver proyecto"
+                                ButtonLink="https://jorgesanz.es/termometro-arduino-con-pantalla-lcd/"
+                                ExtraInfo="Intermedio"
+                            />
+
+                            <InfoListCard
+                                Color="bg-purple-600"
+                                IconColor={colors.purpleTech}
+                                Icon={faRobot}
+                                Title="Control de Motor"
+                                ListItems={[
+                                    'Componentes: Motor DC, driver L298N',
+                                    'Conceptos: PWM, control de potencia',
+                                    'Dificultad: Avanzado',
+                                    'Tiempo estimado: 90 min'
+                                ]}
+                                ButtonText="Ver proyecto"
+                                ButtonLink="https://www.bricolabs.cc/wiki/guias/control_de_motores"
+                                ExtraInfo="Avanzado"
+                            />
+                        </div>
                     </div>
-                    <div className="w-full max-w-3xl mx-auto">
-                        <InfoListCard
-                            Color="bg-[var(--interactive-green)]"
-                            Icon={faBolt}
-                            IconColor={colors.interactiveGreen}
-                            Title="Consejos de codificación"
-                            ListItems={[
-                                "Comienza con ejemplos básicos",
-                                "Prueba en simuladores como Tinkercad",
-                                "Comenta tu código para entenderlo mejor",
-                                "Consulta la documentación oficial",
-                                "Usa funciones para organizar tu lógica",
-                            ]}
-                            ButtonText="Guía completa"
-                            ButtonLink="/guia"
-                            ExtraInfo="Recomendado"
-                            className="flex text-lg p-6 mx-auto"
-                        />
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
     );
