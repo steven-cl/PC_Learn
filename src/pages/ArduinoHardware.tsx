@@ -237,7 +237,7 @@ export default function ArduinoHardware() {
                                 'Tiempo estimado: 90 min'
                             ]}
                             ButtonText="Ver proyecto"
-                            ButtonLink="https://www.bricolabs.cc/wiki/guias/control_de_motores"
+                            ButtonLink="/motorControlProject"
                             ExtraInfo="Avanzado"
                         />
                     </div>

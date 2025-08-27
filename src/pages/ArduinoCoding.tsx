@@ -1,4 +1,4 @@
-import { faCode, faThermometerHalf, faMicrochip, faLightbulb, faBolt } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faThermometerHalf, faMicrochip, faLightbulb, faBolt, faRobot } from '@fortawesome/free-solid-svg-icons';
 import InfoListCard from '@/components/ui/InfoListCard';
 import SummaryCard from '@/components/ui/SummaryCard';
 import colors from '@/styles';
@@ -152,6 +152,24 @@ export default function ArduinoCoding() {
                             ButtonText="Ver más"
                             ButtonLink="/proyectos"
                             ExtraInfo="Nivel: Principiante"
+                            className="flex text-lg p-6 mx-auto"
+                        />
+                    </div>
+                    <div className="w-full max-w-3xl mx-auto">
+                        <InfoListCard
+                            Color="bg-purple-600"
+                            Icon={faRobot}
+                            IconColor={colors.purpleTech}
+                            Title="Control de Motor DC"
+                            ListItems={[
+                                "Aprende a controlar motores con L298N",
+                                "Programación con PWM y control de dirección",
+                                "Código comentado paso a paso",
+                                "Diagramas de circuito detallados"
+                            ]}
+                            ButtonText="Ver proyecto"
+                            ButtonLink="/motorControlProject"
+                            ExtraInfo="Nivel: Avanzado"
                             className="flex text-lg p-6 mx-auto"
                         />
                     </div>
