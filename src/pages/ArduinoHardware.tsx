@@ -221,7 +221,7 @@ export default function ArduinoHardware() {
                                 'Tiempo estimado: 45 min'
                             ]}
                             ButtonText="Ver proyecto"
-                            ButtonLink="https://jorgesanz.es/termometro-arduino-con-pantalla-lcd/"
+                            ButtonLink="/arduinoTermometro"
                             ExtraInfo="Intermedio"
                         />
 

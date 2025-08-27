@@ -114,6 +114,24 @@ export default function ArduinoCoding() {
                             </CardContent>
                         </Card>
                     </div>
+                    <div className="w-full max-w-3xl mx-auto">
+                        <InfoListCard
+                            Color="bg-green-600"
+                            Icon={faThermometerHalf}
+                            IconColor={colors.interactiveGreen}
+                            Title="Termómetro Digital Completo"
+                            ListItems={[
+                                "Sensor LM35 + Display LCD",
+                                "Código completo con comentarios",
+                                "Diagrama de circuito detallado",
+                                "Instrucciones de montaje"
+                            ]}
+                            ButtonText="Ver proyecto"
+                            ButtonLink="/arduinoTermometro"
+                            ExtraInfo="Proyecto Completo"
+                            className="flex text-lg p-6 mx-auto"
+                        />
+                    </div>
                 </div>
 
                 <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
