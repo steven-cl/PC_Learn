@@ -25,16 +25,21 @@ import {
     CpuChipIcon,
     CodeBracketIcon,
     CogIcon,
+    LightBulbIcon,
     Bars3Icon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
 
 import { ChevronDownIcon} from '@heroicons/react/20/solid'
+import { faThermometerHalf } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 //Constants for subMenuListItems and calls to action
 const subMenuListItems = [
     { name: 'Hardware', description: 'Aprenderas como funciona un arduino y circuitos en el', to: '/arduinoHardware', icon: CpuChipIcon },
     { name: 'Codificando', description: 'Aprenderas a codificar proyectos en arduino', to: '/arduinoCoding', icon: CodeBracketIcon },
+    { name: 'LED Intermitente', description: 'Proyecto básico: aprende a hacer parpadear un LED', to: '/arduinoLedProject', icon: LightBulbIcon },
+    { name: 'Termómetro Digital', description: 'Proyecto completo de termómetro con sensor LM35', to: '/arduinoTermometro', icon: faThermometerHalf },
     { name: 'Control de Motor', description: 'Proyecto completo para controlar motores DC con Arduino', to: '/motorControlProject', icon: CogIcon }
 ]
 
@@ -98,11 +103,18 @@ const HeaderNavigation: React.FC = () => {
                                         className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
                                     >
                                         <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                            <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
+                                            {item.name === 'Termómetro Digital' ? (
+                                                <FontAwesomeIcon 
+                                                    icon={item.icon as any} 
+                                                    className="size-6 text-gray-600 group-hover:text-indigo-600" 
+                                                />
+                                            ) : (
+                                                <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
+                                            )}
                                         </div>
                                         <div className="flex-auto">
                                             <Link to={item.to} className="block font-semibold text-gray-900"
-                                            onClick={() => setOpen(false)}>
+                                            onClick={() => setMobileMenuOpen(false)}>
                                                 {item.name}
                                                 <span className="absolute inset-0" />
                                             </Link>

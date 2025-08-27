@@ -205,7 +205,7 @@ export default function ArduinoHardware() {
                                 'Tiempo estimado: 15 min'
                             ]}
                             ButtonText="Ver proyecto"
-                            ButtonLink="https://arduino.microlog.es/luz-intermitente/"
+                            ButtonLink="/arduinoLedProject"
                             ExtraInfo="Básico"
                         />
 
@@ -221,7 +221,7 @@ export default function ArduinoHardware() {
                                 'Tiempo estimado: 45 min'
                             ]}
                             ButtonText="Ver proyecto"
-                            ButtonLink="https://jorgesanz.es/termometro-arduino-con-pantalla-lcd/"
+                            ButtonLink="/arduinoTermometro"
                             ExtraInfo="Intermedio"
                         />
 
