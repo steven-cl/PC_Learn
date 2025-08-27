@@ -97,6 +97,34 @@ export default function ArduinoCoding() {
                 <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
                     <div className="w-full max-w-3xl mx-auto">
                         <SummaryCard
+                            icon={faLightbulb}
+                            title="Proyecto: LED Intermitente"
+                            description="El proyecto perfecto para comenzar con Arduino. Aprende los conceptos básicos de salidas digitales y temporización.\n Controla un LED para que parpadee cada segundo."
+                        />
+                    </div>
+                    <div className="w-full max-w-3xl mx-auto">
+                        <InfoListCard
+                            Color="bg-orange-500"
+                            Icon={faLightbulb}
+                            IconColor={colors.projectOrange}
+                            Title="LED Intermitente - Proyecto Completo"
+                            ListItems={[
+                                "Diagrama de circuito paso a paso",
+                                "Código Arduino comentado en detalle",
+                                "Explicación de conceptos fundamentales",
+                                "Nivel: Principiante - 15 minutos"
+                            ]}
+                            ButtonText="Ver proyecto completo"
+                            ButtonLink="/arduinoLedProject"
+                            ExtraInfo="Proyecto básico"
+                            className="flex text-lg p-6 mx-auto"
+                        />
+                    </div>
+                </div>
+
+                <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">
+                    <div className="w-full max-w-3xl mx-auto">
+                        <SummaryCard
                             icon={faThermometerHalf}
                             title="Proyecto: Sensor de Temperatura"
                             description="Usando el sensor LM35, puedes medir temperatura ambiente y mostrarla por el monitor serial.\n Usa analogRead() y convierte el valor a grados."

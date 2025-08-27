@@ -205,7 +205,7 @@ export default function ArduinoHardware() {
                                 'Tiempo estimado: 15 min'
                             ]}
                             ButtonText="Ver proyecto"
-                            ButtonLink="https://arduino.microlog.es/luz-intermitente/"
+                            ButtonLink="/arduinoLedProject"
                             ExtraInfo="Básico"
                         />
 

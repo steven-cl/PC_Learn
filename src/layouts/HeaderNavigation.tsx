@@ -24,6 +24,7 @@ import {
     BookOpenIcon,
     CpuChipIcon,
     CodeBracketIcon,
+    LightBulbIcon,
     Bars3Icon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
@@ -33,7 +34,8 @@ import { ChevronDownIcon} from '@heroicons/react/20/solid'
 //Constants for subMenuListItems and calls to action
 const subMenuListItems = [
     { name: 'Hardware', description: 'Aprenderas como funciona un arduino y circuitos en el', to: '/arduinoHardware', icon: CpuChipIcon },
-    { name: 'Codificando', description: 'Aprenderas a codificar proyectos en arduino', to: '/arduinoCoding', icon: CodeBracketIcon }
+    { name: 'Codificando', description: 'Aprenderas a codificar proyectos en arduino', to: '/arduinoCoding', icon: CodeBracketIcon },
+    { name: 'LED Intermitente', description: 'Proyecto básico: aprende a hacer parpadear un LED', to: '/arduinoLedProject', icon: LightBulbIcon }
 ]
 
 const primaryColor = "#000000"
