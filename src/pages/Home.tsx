@@ -2,7 +2,6 @@ import * as FA from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import colors from '@/styles';
 import InfoListCard from '@components/ui/InfoListCard'
-import SimpleModuleCard from '@components/ui/SimpleModuleCard'
 import FeaturedCard from '@components/ui/FeaturedCard'
 import SummaryCard from '@components/ui/SummaryCard'
 

@@ -78,7 +78,6 @@ export default function ArduinoCoding() {
                             icon={faCode}
                             title="¿Cómo se programa Arduino?"
                             description="Arduino se programa con C/C++ usando el IDE de Arduino.\n Las funciones principales son setup() y loop().\n setup() se ejecuta una vez y loop() continuamente."
-                            className="text-lg p-6"
                         />
                     </div>
                     <div className="w-full max-w-3xl mx-auto">
@@ -101,7 +100,6 @@ export default function ArduinoCoding() {
                             icon={faThermometerHalf}
                             title="Proyecto: Sensor de Temperatura"
                             description="Usando el sensor LM35, puedes medir temperatura ambiente y mostrarla por el monitor serial.\n Usa analogRead() y convierte el valor a grados."
-                            className="text-lg p-6"
                         />
                     </div>
                     <div className="w-full max-w-3xl mx-auto">
@@ -124,7 +122,6 @@ export default function ArduinoCoding() {
                             icon={faMicrochip}
                             title="Funciones personalizadas"
                             description="Puedes encapsular comportamientos repetitivos en funciones como parpadearLED(pin, tiempo)\n o leerTemperatura(pin), para reutilizar código fácilmente."
-                            className="text-lg p-6"
                         />
                     </div>
                     <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">

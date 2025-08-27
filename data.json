@@ -1,0 +1,504 @@
+{
+    "Informática / Programación / TI": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "Dell+Inspiron+15+3520",
+            "CPU": "i3-1215U",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "iGPU",
+            "Precio": "475"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "Acer+Aspire+5+A515-56-53S3",
+            "CPU": "i5-1135G7",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Iris Xe",
+            "Precio": "575"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+Inspiron+3910",
+            "CPU": "i3-12100",
+            "RAM": "8 GB",
+            "Almacenamiento": "256–512 GB SSD",
+            "GPU": "UHD integrada",
+            "Precio": "500"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+Inspiron+3910+(i5)",
+            "CPU": "i5-12400",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "UHD 730",
+            "Precio": "650"
+        }
+    },
+    "Redes y Telecomunicaciones": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "Dell+Inspiron+15+3520",
+            "CPU": "i5-1135G7",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "iGPU",
+            "Precio": "550"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "Acer+Aspire+5",
+            "CPU": "i5-1135G7",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Iris Xe",
+            "Precio": "600"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+Inspiron+3910",
+            "CPU": "i5-12400",
+            "RAM": "8–16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Integrada",
+            "Precio": "600"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+OptiPlex+7000+SFF",
+            "CPU": "i5-12400",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "UHD 730",
+            "Precio": "700"
+        }
+    },
+    "Diseño y Artes Digitales": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "HP+Victus+15",
+            "CPU": "i5-12450H",
+            "RAM": "8–16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "GTX 1650",
+            "Precio": "800"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "HP+Victus+15",
+            "CPU": "i5-12450H",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "RTX 3050",
+            "Precio": "1,000"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Lenovo+IdeaCentre+5+/+Gaming+5+(5600G)",
+            "CPU": "Ryzen 5 5600G",
+            "RAM": "8–16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Integrada (opción añadir GPU)",
+            "Precio": "700"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Lenovo+IdeaCentre+Gaming+5+(RTX+3050)",
+            "CPU": "Ryzen 5 5600",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "RTX 3050",
+            "Precio": "1,000"
+        }
+    },
+    "Marketing / Negocios / Community Manager": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "Lenovo+IdeaPad+Flex+5+(14\"+AMD)",
+            "CPU": "Ryzen 5 5500U",
+            "RAM": "8–16 GB",
+            "Almacenamiento": "256–512 GB SSD",
+            "GPU": "Integrada",
+            "Precio": "500"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "Acer+Aspire+5",
+            "CPU": "i5-1135G7",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Iris Xe",
+            "Precio": "550"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+Inspiron+3910",
+            "CPU": "i3-12100",
+            "RAM": "8 GB",
+            "Almacenamiento": "256–512 GB SSD",
+            "GPU": "Integrada",
+            "Precio": "500"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+Inspiron+3910+(i5)",
+            "CPU": "i5-12400",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "UHD 730",
+            "Precio": "600"
+        }
+    },
+    "Finanzas / Contabilidad / Economía": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "Dell+Inspiron+15+3520",
+            "CPU": "i3-1215U",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "iGPU",
+            "Precio": "475"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "Acer+Aspire+5",
+            "CPU": "i5-1135G7",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Iris Xe",
+            "Precio": "575"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+Inspiron+3910",
+            "CPU": "i3-12100",
+            "RAM": "8 GB",
+            "Almacenamiento": "256–512 GB SSD",
+            "GPU": "Integrada",
+            "Precio": "500"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "HP+Pavilion+Desktop",
+            "CPU": "i5-12400",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "UHD 730",
+            "Precio": "625"
+        }
+    },
+    "Arquitectura / Ingeniería / Modelado 3D": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "HP+Victus+15",
+            "CPU": "i5-12450H",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "RTX 3050",
+            "Precio": "1,000"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "ASUS+TUF+Gaming+F15+(2022)",
+            "CPU": "i5-12500H",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "RTX 3050/3060",
+            "Precio": "1,200"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Lenovo+IdeaCentre+Gaming+5+(5600G)",
+            "CPU": "Ryzen 5 5600G",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Integrada (opción añadir GPU)",
+            "Precio": "700"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "HP+Omen+25L",
+            "CPU": "i5-13400F",
+            "RAM": "16 GB",
+            "Almacenamiento": "1 TB SSD",
+            "GPU": "RTX 3060",
+            "Precio": "1,300"
+        }
+    },
+    "Salud / Medicina": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "Dell+Inspiron+15+3520",
+            "CPU": "i5-1135G7",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "iGPU",
+            "Precio": "550"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "Acer+Aspire+5",
+            "CPU": "i5-1135G7",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Iris Xe",
+            "Precio": "600"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+Inspiron+3910",
+            "CPU": "i5-12400",
+            "RAM": "8–16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Integrada",
+            "Precio": "600"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+OptiPlex+7000",
+            "CPU": "i5-12400",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "UHD 730",
+            "Precio": "650"
+        }
+    },
+    "Educación / Docencia": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "Lenovo+IdeaPad+Flex+5+(14\"+AMD)",
+            "CPU": "Ryzen 5/7 5000-series",
+            "RAM": "8–16 GB",
+            "Almacenamiento": "256–512 GB SSD",
+            "GPU": "Integrada",
+            "Precio": "500"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "Acer+Aspire+5",
+            "CPU": "i5-1135G7",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Iris Xe",
+            "Precio": "550"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Lenovo+IdeaCentre+5+(AMD)",
+            "CPU": "Ryzen 5/7 5000-series",
+            "RAM": "8 GB",
+            "Almacenamiento": "256–512 GB SSD",
+            "GPU": "Integrada",
+            "Precio": "500"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Lenovo+IdeaCentre+5+(5600G)",
+            "CPU": "Ryzen 5 5600G",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Integrada",
+            "Precio": "575"
+        }
+    },
+    "Comunicación / Periodismo / Multimedia": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "HP+Victus+15",
+            "CPU": "i5-12450H",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "GTX 1650",
+            "Precio": "800"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "HP+Victus+15",
+            "CPU": "i5-12450H",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "RTX 3050",
+            "Precio": "1,000"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Lenovo+IdeaCentre+5+(5600G)",
+            "CPU": "Ryzen 5 5600G",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Integrada (opción añadir GPU)",
+            "Precio": "700"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Lenovo+IdeaCentre+Gaming+5+(RTX+3050)",
+            "CPU": "Ryzen 5 5600",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "RTX 3050",
+            "Precio": "1,000"
+        }
+    },
+    "Derecho / Ciencias Jurídicas": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "Dell+Inspiron+15+3520",
+            "CPU": "i3-1215U",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "iGPU",
+            "Precio": "475"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "Acer+Aspire+5",
+            "CPU": "i5-1135G7",
+            "RAM": "8 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Iris Xe",
+            "Precio": "575"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+Inspiron+3910",
+            "CPU": "i3-12100",
+            "RAM": "8 GB",
+            "Almacenamiento": "256–512 GB SSD",
+            "GPU": "Integrada",
+            "Precio": "500"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+Inspiron+3910+(i5)",
+            "CPU": "i5-12400",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "UHD 730",
+            "Precio": "625"
+        }
+    },
+    "Ciencia / Investigación / Modelado científico": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "HP+Victus+15",
+            "CPU": "i5-12450H",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "RTX 3050",
+            "Precio": "1,000"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "ASUS+TUF+Gaming+F15+(2022)",
+            "CPU": "i5-12500H",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "RTX 3050/3060",
+            "Precio": "1,200"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Lenovo+IdeaCentre+Gaming+5+(5600G)",
+            "CPU": "Ryzen 5 5600G",
+            "RAM": "16 GB",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "Integrada (opción añadir GPU)",
+            "Precio": "700"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+XPS+Desktop",
+            "CPU": "i7-12700",
+            "RAM": "32 GB",
+            "Almacenamiento": "1 TB SSD",
+            "GPU": "RTX 3060 (CUDA)",
+            "Precio": "1,500"
+        }
+    },
+    "Estudiantes / Hogar": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "Lenovo+IdeaPad+1+(2023)",
+            "CPU": "AMD Athlon Silver 3050U",
+            "RAM": "4 GB",
+            "Almacenamiento": "128 GB SSD",
+            "GPU": "Integrada AMD Vega",
+            "Pantalla": "14\" HD",
+            "Precio": "275"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "Acer+Aspire+3+(2024)",
+            "CPU": "Intel Core i3-1215U",
+            "RAM": "8 GB",
+            "Almacenamiento": "256 GB SSD",
+            "GPU": "Intel Iris Xe",
+            "Pantalla": "15.6\" Full HD",
+            "Precio": "460"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "HP+Slim+Desktop+S01",
+            "CPU": "Intel Pentium Gold G6400",
+            "RAM": "4 GB",
+            "Almacenamiento": "128 GB SSD",
+            "GPU": "Intel UHD 610",
+            "Pantalla": "Incluido monitor básico",
+            "Precio": "325"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+Inspiron+Desktop+3910",
+            "CPU": "Intel Core i3-12100",
+            "RAM": "8 GB",
+            "Almacenamiento": "256 GB SSD",
+            "GPU": "Intel UHD 730",
+            "Pantalla": "No incluida",
+            "Precio": "525"
+        }
+    },
+    "Gaming": {
+        "1": {
+            "Tipo": "Laptop",
+            "Modelo": "Acer+Nitro+5+AN515-57",
+            "CPU": "Intel Core i5-11400H",
+            "RAM": "8 GB DDR4",
+            "Almacenamiento": "256 GB SSD",
+            "GPU": "NVIDIA GTX 1650",
+            "Pantalla": "15.6\" Full HD 60Hz",
+            "Precio": "700"
+        },
+        "2": {
+            "Tipo": "Laptop",
+            "Modelo": "ASUS+ROG+Zephyrus+G15",
+            "CPU": "AMD Ryzen 7 5800HS",
+            "RAM": "16 GB DDR4",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "NVIDIA RTX 3060",
+            "Pantalla": "15.6\" Full HD 144Hz",
+            "Precio": "1,400"
+        },
+        "3": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "HP+Pavilion+Gaming+Desktop",
+            "CPU": "AMD Ryzen 5 5600G",
+            "RAM": "8 GB DDR4",
+            "Almacenamiento": "256 GB SSD",
+            "GPU": "Integrada AMD Radeon Vega 7",
+            "Pantalla": "No incluida",
+            "Precio": "500"
+        },
+        "4": {
+            "Tipo": "PC Escritorio",
+            "Modelo": "Dell+G5+Gaming+Desktop",
+            "CPU": "Intel Core i7-12700F",
+            "RAM": "16 GB DDR4",
+            "Almacenamiento": "512 GB SSD",
+            "GPU": "NVIDIA RTX 3060",
+            "Pantalla": "No incluida",
+            "Precio": "1,200"
+        }
+    }
+}
