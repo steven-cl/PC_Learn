@@ -165,6 +165,41 @@ export default function ArduinoCoding() {
                             className="flex text-lg p-6 mx-auto"
                         />
                     </div>
+                    <div className="w-full max-w-3xl mx-auto">
+                        <InfoListCard
+                            Color="bg-purple-600"
+                            Icon={faRobot}
+                            IconColor={colors.purpleTech}
+                            Title="Control de Motor DC"
+                            ListItems={[
+                                "Aprende a controlar motores con L298N",
+                                "Programación con PWM y control de dirección",
+                                "Código comentado paso a paso",
+                                "Diagramas de circuito detallados"
+                            ]}
+                            ButtonText="Ver proyecto"
+                            ButtonLink="/motorControlProject"
+                            ExtraInfo="Nivel: Avanzado"
+                            className="flex text-lg p-6 mx-auto"
+                        />
+                    </div>
+                    <div className="w-full max-w-3xl mx-auto">
+                        <InfoListCard
+                            Color="bg-[var(--interactive-green)]"
+                            Icon={faBolt}
+                            IconColor={colors.interactiveGreen}
+                            Title="Consejos de codificación"
+                            ListItems={[
+                                "Comienza con ejemplos básicos",
+                                "Prueba en simuladores como Tinkercad",
+                                "Comenta tu código para entenderlo mejor",
+                                "Consulta la documentación oficial",
+                                "Usa funciones para organizar tu lógica",
+                            ]}
+                            ButtonText="Guía completa"
+                            ButtonLink="/guia"
+                            ExtraInfo="Recomendado"
+                            className="flex text-lg p-6 mx-auto"
                 </div>
 
                 <div className="flex flex-col gap-6 items-stretch mb-6 py-16 w-full">

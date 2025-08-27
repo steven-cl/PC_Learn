@@ -24,6 +24,7 @@ import {
     BookOpenIcon,
     CpuChipIcon,
     CodeBracketIcon,
+    CogIcon,
     LightBulbIcon,
     Bars3Icon,
     XMarkIcon,
@@ -39,7 +40,7 @@ const subMenuListItems = [
     { name: 'Codificando', description: 'Aprenderas a codificar proyectos en arduino', to: '/arduinoCoding', icon: CodeBracketIcon },
     { name: 'LED Intermitente', description: 'Proyecto básico: aprende a hacer parpadear un LED', to: '/arduinoLedProject', icon: LightBulbIcon },
     { name: 'Termómetro Digital', description: 'Proyecto completo de termómetro con sensor LM35', to: '/arduinoTermometro', icon: faThermometerHalf },
-    
+    { name: 'Control de Motor', description: 'Proyecto completo para controlar motores DC con Arduino', to: '/motorControlProject', icon: CogIcon }
 ]
 
 const primaryColor = "#000000"

@@ -9,6 +9,7 @@ import ArduinoLedProject from '@pages/ArduinoLedProject'
 import BasicsArchitecture from '@pages/BasicsArchitecture'
 import PcComponents from '@pages/PcComponents'
 import RecomendPC from '@pages/RecommendPc'
+import MotorControlProject from '@pages/MotorControlProject'
 import Layout from '@/Layout'
 import NotFound from '@pages/NotFound'
 import ScrollToTop from '@components/ui/ScrollToTop'
@@ -26,6 +27,7 @@ function App() {
             <Route path='/arduinoBasics' element={<ArduinoBasics />} />
             <Route path='/arduinoCoding' element={<ArduinoCoding />} />
             <Route path='/arduinoHardware' element={<ArduinoHardware />} />
+            <Route path='/motorControlProject' element={<MotorControlProject />} />
             <Route path='/arduinoTermometro' element={<ArduinoTermometro />} />
             <Route path='/arduinoLedProject' element={<ArduinoLedProject />} />
             <Route path='/basicsArchitecture' element={<BasicsArchitecture />} />
